@@ -26,6 +26,7 @@ function initValues() {
     text_area.removeClass("err");
     text_area.removeClass("disabled-true");
 
+
     $("#chars-writed").text(text_area.val().length);
     $("#words-writed").text(text_area.val().split(/\S+/).length -1);
 
@@ -33,6 +34,14 @@ function initValues() {
 };
 
 function initTimer(){
+
+    
+    $("#chars-writed").text(text_area.val().length);
+    $("#words-writed").text(text_area.val().split(/\S+/).length -1);
+};
+
+function initTimer(){
+    
     var text_area = $("#text-area");
     var seconds = $("#seconds").text();
 
