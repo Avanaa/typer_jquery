@@ -33,7 +33,6 @@ function initValues() {
 };
 
 function initTimer(){
-    // seconds = 5;
     var text_area = $("#text-area");
     var seconds = $("#seconds").text();
 
