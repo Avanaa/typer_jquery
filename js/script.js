@@ -3,7 +3,6 @@ var secondsInitial;
 $("document").ready(function(){
     secondsInitial = $("#seconds").text();
     initValues();
-    initTimer();
 });
 
 $("#refresh").on("click", initValues);
@@ -29,6 +28,7 @@ function initValues() {
     
     $("#chars-writed").text(text_area.val().length);
     $("#words-writed").text(text_area.val().split(/\S+/).length -1);
+    initTimer();
 };
 
 function initTimer(){
