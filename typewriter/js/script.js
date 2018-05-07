@@ -3,7 +3,6 @@ var secondsInitial;
 $("document").ready(function(){
     secondsInitial = $("#seconds").text();
     initValues();
-    initTimer();
 });
 
 $("#refresh").on("click", initValues);
@@ -26,13 +25,15 @@ function initValues() {
     text_area.removeClass("correct");
     text_area.removeClass("err");
     text_area.removeClass("disabled-true");
-    
+
     $("#chars-writed").text(text_area.val().length);
     $("#words-writed").text(text_area.val().split(/\S+/).length -1);
+
+    initTimer();
 };
 
 function initTimer(){
-    
+    // seconds = 5;
     var text_area = $("#text-area");
     var seconds = $("#seconds").text();
 
