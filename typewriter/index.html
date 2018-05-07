@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Typewriter</title>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1 class="center">Typer</h1>
+
+            <p class="phrase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam alias eius dignissimos, deserunt qui ipsum nemo voluptatibus modi natus commodi vitae assumenda quo exercitationem. Neque, mollitia? Placeat quae ipsa quo.
+            </p>
+
+            <ul class="list">
+                <li><span id="words">0</span> Palavras</li>
+                <li><span id="chars">0</span> Caracteres</li>
+                <li><span id="seconds">5</span> Segundos</li>
+            </ul>
+
+            <textarea id="text-area" class="border" rows="10" cols="20"></textarea>
+
+            <button class="waves-effect waves-light btn-large button-refresh" id="refresh">Reiniciar</button>
+
+            <ul class="list">
+                <li><span id="words-writed">0</span> Palavras digitadas</li>
+                <li><span id="chars-writed">0</span> Caracteres</li>
+            </ul>
+
+            <section id="section-score">
+                <h3 class="center">Últimos resultados</h3>
+
+                <table class="centered bordered" id="table-score">
+                    <thead id="table-head">
+                        <tr>
+                            <td>Nome</td>
+                            <td>Número de palavras</td>
+                            <td>Segundos</td>
+                            <td>Remover</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/score.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

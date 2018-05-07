@@ -1,0 +1,60 @@
+html{
+    font-family: 'Special Elite';
+}
+
+body{
+    overflow: scroll;
+}
+
+.list {
+    padding-left: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+.phrase {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.phrase:before{
+    content: open-quote;
+}
+
+.phrase:after{
+    content: close-quote;
+}
+
+#text-area{
+    width: 80%;
+    height: 12em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 0.2em black;
+}
+
+.correct{
+    background-color: #e0f2f1;
+}
+
+.err{
+    background-color: #ffcdd2;
+}
+
+.disabled-true{
+    background-color: #bdbdbd;
+    color: #757575;
+}
+
+.button-refresh{
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+td{
+    text-align: center !important;
+}
